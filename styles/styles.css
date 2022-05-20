@@ -1,0 +1,90 @@
+h2 {
+  text-align: center;
+  color: #0d0707;
+  text-transform: uppercase;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  margin: 2px;
+}
+
+.card,
+.back,
+.front {
+  height: 102px;
+  width: 110px;
+}
+
+.back,
+.front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front {
+  z-index: 10;
+  background: url("../images/bground.jpg") no-repeat center/contain;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: #c0c6c9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.match .front {
+  background: #0edd11 !important;
+}
+
+.dark-mode {
+  background-color: #100808;
+  color: white;
+}
+
+button {
+  border-radius: 21px;
+  float: right;
+  font-size: 1.5em;
+  margin-right: 20px;
+  background-color: #0edd11;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 10px 0;
+  background: #fbfbfb;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,1 +1,15 @@
-@import './memory'
+@import './memory';
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px 0;
+    background: #fbfbfb;
+}
+
